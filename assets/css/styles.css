@@ -200,3 +200,27 @@ a {
   color: #2563eb;
   font-weight: 600;
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #2563eb;
+}
+
+.project-tag {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #2563eb;
+}
