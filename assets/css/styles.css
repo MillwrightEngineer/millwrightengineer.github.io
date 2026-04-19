@@ -143,3 +143,38 @@ a {
     align-items: flex-start;
   }
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  font-weight: bold;
+  margin: 0 0 0.25rem 0;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  opacity: 0.85;
+}
