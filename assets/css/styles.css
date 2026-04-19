@@ -178,3 +178,25 @@ a {
 .footer-nav a:focus {
   opacity: 0.85;
 }
+
+.page-hero {
+  background: #e5e7eb;
+  padding: 4rem 0;
+}
+
+.page-section {
+  padding: 4rem 0;
+}
+
+.alt-section {
+  background: #eef2f6;
+}
+
+.narrow {
+  max-width: 800px;
+}
+
+.text-link {
+  color: #2563eb;
+  font-weight: 600;
+}
