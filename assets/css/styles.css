@@ -224,3 +224,130 @@ a {
   letter-spacing: 0.04em;
   color: #2563eb;
 }
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.feature-list li {
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  border-bottom: 1px solid #d8dde4;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.contact-card a {
+  color: #2563eb;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.post-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: #ffffff;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #2563eb;
+}
+
+.post-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.post-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.post-body h2 {
+  margin-top: 2.5rem;
+}
+
+.post-body p,
+.post-body ul {
+  margin-bottom: 1.1rem;
+}
+
+.legal-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.legal-page h2 {
+  margin-top: 2rem;
+}
+
+.resume-section {
+  margin-top: 2.5rem;
+}
+
+.resume-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #d8dde4;
+}
+
+.resume-item:last-child {
+  border-bottom: none;
+}
+
+.resume-item h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.resume-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem 0;
+}
