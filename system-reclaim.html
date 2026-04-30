@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Reclaim | Millwright Engineer</title>
+  <meta
+    name="description"
+    content="System Reclaim is a gamified habit and project tracker styled as a worn industrial HMI control panel. Real-world habits map to factory subsystems you monitor and advance every day."
+  />
+  <link rel="canonical" href="https://millwrightengineer.com/system-reclaim.html" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Millwright Engineer" />
+  <meta property="og:title" content="System Reclaim | Millwright Engineer" />
+  <meta property="og:description" content="A gamified habit and project tracker styled as a worn industrial HMI control panel. Habits map to factory subsystems you advance every day." />
+  <meta property="og:url" content="https://millwrightengineer.com/system-reclaim.html" />
+  <meta property="og:image" content="https://millwrightengineer.com/assets/img/MillwrightEngineerBanner.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="System Reclaim | Millwright Engineer" />
+  <meta name="twitter:description" content="A gamified habit and project tracker styled as a worn industrial HMI control panel. Habits map to factory subsystems you advance every day." />
+  <meta name="twitter:image" content="https://millwrightengineer.com/assets/img/MillwrightEngineerBanner.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Millwright Engineer</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="system-reclaim.html" aria-current="page">System Reclaim</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="aimmmes.html">AIMMMES</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">System Reclaim</p>
+        <h1>Daily control panel for the personal factory.</h1>
+        <p class="hero-text">
+          A gamified habit and project tracker styled as a worn industrial HMI. Real-world habits map to
+          factory subsystems you monitor and advance every day. Habit tracker first, factory restoration second.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container narrow">
+        <h2>What it is</h2>
+        <p>
+          System Reclaim turns daily habits into systems work. Five subsystems &mdash; movement, recovery,
+          fuel, assembly, and will &mdash; map to real-world routines: exercise, sleep, protein intake,
+          project effort, and family time. Each one has a control and a status indicator on a single panel,
+          and each day either advances them or lets them drift back toward fault.
+        </p>
+        <p>
+          The longer arc is a factory restoration game called <em>Fallen Factories</em>. The near-term build
+          is the panel itself: a stylized productivity dashboard that earns its aesthetic by actually doing
+          its job. Built carefully, not rushed.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section alt-section">
+      <div class="container">
+        <h2>Five subsystems</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>DRIVE</h3>
+            <p>
+              Exercise. A 7-day rolling counter rewards consistency over intensity, and missed days dim the
+              indicator instead of penalizing it.
+            </p>
+          </article>
+          <article class="card">
+            <h3>POWER</h3>
+            <p>
+              Sleep. Hours logged drive the panel's own state &mdash; visible in the bezel and the boot
+              animation on the next session.
+            </p>
+          </article>
+          <article class="card">
+            <h3>INTAKE</h3>
+            <p>
+              Protein. Daily grams against a target, tracked simply because the simplest input that holds is
+              the one that gets logged.
+            </p>
+          </article>
+          <article class="card">
+            <h3>ASSEMBLY</h3>
+            <p>
+              Project effort. A dropdown of active projects (CMMS, this website, NCCER Level 4, Master's
+              coursework, AIMMMES). One project per day, marked done or not.
+            </p>
+          </article>
+          <article class="card">
+            <h3>WILL</h3>
+            <p>
+              Family time. The most important subsystem dressed as the simplest control: present today,
+              yes or no.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container narrow">
+        <h2>Tech &amp; build</h2>
+        <ul class="feature-list">
+          <li>Next.js 16 with React 19 and TypeScript</li>
+          <li>Tailwind CSS v4 with custom industrial styling: CRT bezel, phosphor text, scanline overlay, procedural noise grain, corner rust tints, boot animation</li>
+          <li>Local-first state via <code>localStorage</code> &mdash; no backend, no account required</li>
+          <li>Designed mobile-first; the panel scales cleanly from phone to wide desktop</li>
+          <li>Versioned at v0.2 (April 2026): wear textures, bezel, pulse, caution stripe, boot animation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Try the panel</h2>
+        <p>
+          The first public deploy is in progress. Once it's live, drop in to flip a few signals and see
+          the bezel react.
+        </p>
+        <p>
+          <!-- TODO: replace this badge with <a class="btn btn-primary" href="<vercel-url>">Open the live panel</a> once the Vercel deploy URL is in hand. -->
+          <span class="coming-soon-badge">Live demo coming soon</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section alt-section">
+      <div class="container">
+        <h2>Other work in progress</h2>
+        <p>
+          System Reclaim is the lead build, but the broader portfolio is moving on a few other fronts. These
+          are still being shaped &mdash; the cards below will become full case studies as the work is ready
+          to show.
+        </p>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-tag">AI / ML Homelab</p>
+            <h3>AI/ML in Manufacturing Homelab</h3>
+            <p>
+              A developing local experimentation environment for running machine learning and AI workflows tied to
+              manufacturing and industrial use cases. This homelab supports model testing, systems learning,
+              open-source tooling, and practical experimentation without depending entirely on cloud platforms.
+            </p>
+            <span class="coming-soon-badge">Coming soon</span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-tag">Machine Learning / Construction</p>
+            <h3>Construction Submittal Review ML Project</h3>
+            <p>
+              A machine learning project focused on improving the review of construction submittals through more
+              structured classification, analysis, and decision support. This project represents a direct step
+              toward useful industrial AI applications.
+            </p>
+            <span class="coming-soon-badge">Coming soon</span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-tag">Industrial Systems</p>
+            <h3>CMMS and Maintenance Systems Development</h3>
+            <p>
+              Practical work tied to maintenance tracking, workflow structure, and industrial support systems,
+              including database-driven tools and maintenance-oriented process organization.
+            </p>
+            <span class="coming-soon-badge">Coming soon</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p class="footer-brand">Millwright Engineer</p>
+        <p class="footer-copy">&copy; 2026 Millwright Engineer. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
