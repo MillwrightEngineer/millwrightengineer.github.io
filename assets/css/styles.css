@@ -44,7 +44,7 @@ button:focus-visible {
   background: var(--color-black);
   color: var(--color-on-dark);
   padding: 1rem 0;
-  border-bottom: 3px solid var(--color-red);
+  border-bottom: 6px solid var(--color-red);
 }
 
 .nav-container {
@@ -78,18 +78,40 @@ button:focus-visible {
   color: var(--color-red);
 }
 
+.site-nav a[aria-current="page"] {
+  border-bottom: 2px solid var(--color-red);
+  padding-bottom: 2px;
+}
+
 .hero {
   background: linear-gradient(135deg, var(--color-black), var(--color-metal-dark));
   color: var(--color-on-dark);
   padding: 5rem 0;
-  border-bottom: 3px solid var(--color-red);
+  border-bottom: 8px solid var(--color-red);
+}
+
+.page-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 6px solid var(--color-red);
+}
+
+.banner-actions {
+  padding: 2.5rem 0;
+  background: var(--color-metal-bg);
+}
+
+.banner-actions .hero-actions {
+  justify-content: center;
 }
 
 .eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
   color: var(--color-red);
 }
 
@@ -131,13 +153,16 @@ button:focus-visible {
 }
 
 .btn-secondary {
-  background: var(--color-metal-light);
-  color: var(--color-black);
+  background: transparent;
+  color: var(--color-red);
+  border: 2px solid var(--color-red);
+  padding: calc(0.85rem - 2px) calc(1.3rem - 2px);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background: var(--color-metal-alt);
+  background: var(--color-red);
+  color: var(--color-on-dark);
 }
 
 .intro,
@@ -170,7 +195,7 @@ button:focus-visible {
   color: var(--color-on-dark);
   padding: 2rem 0;
   text-align: center;
-  border-top: 3px solid var(--color-red);
+  border-top: 6px solid var(--color-red);
 }
 
 .site-footer a {
@@ -223,11 +248,27 @@ button:focus-visible {
 .page-hero {
   background: var(--color-metal-light);
   padding: 4rem 0;
-  border-top: 3px solid var(--color-red);
+  border-top: 6px solid var(--color-red);
+  border-bottom: 6px solid var(--color-red);
 }
 
 .page-section {
   padding: 4rem 0;
+}
+
+.page-section h2,
+.intro h2,
+.pillars h2,
+.featured h2,
+.cta h2 {
+  border-left: 5px solid var(--color-red);
+  padding-left: 0.85rem;
+  margin-left: -1.05rem;
+}
+
+.cta {
+  border-top: 2px solid var(--color-red);
+  border-bottom: 2px solid var(--color-red);
 }
 
 .alt-section {
