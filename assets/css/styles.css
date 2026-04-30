@@ -97,6 +97,15 @@ button:focus-visible {
   border-bottom: 6px solid var(--color-red);
 }
 
+.banner-actions {
+  padding: 2.5rem 0;
+  background: var(--color-metal-bg);
+}
+
+.banner-actions .hero-actions {
+  justify-content: center;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
