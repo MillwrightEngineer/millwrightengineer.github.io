@@ -93,7 +93,9 @@ button:focus-visible {
 .page-banner {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  object-fit: contain;
   border-bottom: 6px solid var(--color-red);
 }
 
